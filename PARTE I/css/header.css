@@ -5,9 +5,6 @@ header {
     position: fixed;
 }
 
-
-
-
 .right-block li {
     margin-left: 20px;
     cursor: pointer;
@@ -68,7 +65,10 @@ nav ul li:last-child:hover {
 }
   
   @media screen and (max-width: 600px) {
-    .header a:not(:first-child) {display: none;}
+    nav ul{display: none;}
+    .inner-header div img {
+        padding:10px 10px 10px 10px;
+    }
     .header a.icon {
       float: right;
       display: block;

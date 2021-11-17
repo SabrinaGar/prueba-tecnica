@@ -1,0 +1,9 @@
+.flex-container{
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.column-b {
+    flex:2;
+}
