@@ -1,0 +1,90 @@
+header {
+    width: 100%;
+    background-color: black;
+    height: 60px;
+    position: fixed;
+}
+
+
+
+
+.right-block li {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.inner-header {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.inner-header div {
+    flex: 1;
+}
+
+.inner-header div img {
+    height: 30px;
+    width: auto;
+    padding:10px 10px 10px 70px;
+}
+
+nav {
+    flex: auto;
+    text-align: center;
+    padding-left: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+
+}
+
+nav ul i {
+    height: 25px;
+    width: auto;
+    position: relative;
+    color:white;
+    padding-left: 100px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px 10px;
+    cursor: pointer;
+    color: white;
+    font-size: 10px;
+
+}
+
+nav ul li:hover {
+    background-color: rgb(145, 162, 180);
+    color: white;
+}
+
+nav ul li:last-child:hover {
+    background-color: white;
+    color: black;
+}
+  
+  @media screen and (max-width: 600px) {
+    .header a:not(:first-child) {display: none;}
+    .header a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .header.responsive {position: relative;}
+    .header.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .header.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
