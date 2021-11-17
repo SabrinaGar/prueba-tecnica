@@ -1,71 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Bienvenidos al portal de Audiophile</title>
-        <meta content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/layout.css">
-        <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/main-body.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <title>Bienvenidos al portal de Audiophile</title>
+    <meta content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main-body.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-    <body>
-        <header>
+<body>
+    <header>
 
+        </div>
+        <div class="inner-header">
+            <div>
+                <img src="public/audiophilelogo.png" alt="Logo Audiophile">
             </div>
-            <div class="inner-header">
-                <div>
+            <nav>
+                <ul>
+                    <li>HOME</li>
+                    <li>HEADPHONES</li>
+                    <li>SPEAKERS</li>
+                    <li>EARPHONES</li>
+                    <i class="fa fa-fw fa-shopping-cart"></i>
+                </ul>
+
+            </nav>
+        </div>
+    </header>
+
+
+    <div class="flex-container">
+        <div class="column">
+            <div>
+                <a>Go back</a>
+            </div>
+            <img class="img-headphones-black" src="public/headphones-black.png" alt="BlackHeadphones">
+        </div>
+        <div class="column-c">
+            <p style="color: chocolate;">NEW PRODUCT</p>
+            <h2> XX99 MARK II HEADPHONES</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+                sequi odit eos cum reprehenderit veniam nostrum debitis dolore
+                inventore dolorum expedita nulla saepe iste, facilis quasi,
+                minima fugit aliquid totam.</p>
+            <p>$2,999</p>
+            <div class="quantity">
+                <input type="button" value="-" class="minus">
+                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty"
+                    class="input-text qty text" size="4" pattern="" inputmode="">
+                <input type="button" value="+" class="plus">
+            </div>
+            <button>ADD TO CART</button>
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="column-b">
+            <h3>FEATURES</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus dolorem cupiditate laboriosam
+                dolor hic facere unde, quidem eveniet quos quo amet exercitationem tenetur eum modi vero nesciunt
+                similique recusandae. Rerum!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, pariatur porro! Aspernatur corrupti
+                eveniet, doloremque voluptatem sed quibusdam, hic fugiat quod blanditiis impedit ipsum, autem adipisci
+                mollitia nemo debitis sequi.</p>
+        </div>
+        <div class="column">
+            <h3>IN THE BOX</h3>
+            <ul>
+                <li>Headphones Unit</li>
+                <li>Replacement Earcups</li>
+                <li>User Manual</li>
+                <li>3.5mm 5mm Audio Cable</li>
+                <li>Travel Bag</li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="column-img">
+            <img src="public/model-1.png" alt="Model 1">
+            <img src="public/audio-devices.png" alt="Audio devices">
+        </div>
+        <div class="column-b">
+            <img src="public/headphones-black-2.png" alt="Black Headphones 2">
+        </div>
+    </div>
+    <div class="centered-title"><h2>YOU MAY ALSO LIKE</h2></div>
+    <section class="grid-1">
+        
+        <div class="item">
+            <img src="public/headphones-black-3.png" alt="Black Headphones 3">
+            <h2>XX99 MARK I</h2>
+            <button> SEE PRODUCT</button>
+
+        </div>
+        <div class="item">
+            <img src="public/headphones-white.png" alt="White Headphones">
+            <h2>XX59</h2>
+            <button> SEE PRODUCT</button>
+        </div>
+        <div class="item">
+            <img src="public/speakers.png" alt="Speakers">
+            <h2>ZX9 SPEAKER</h2>
+            <button> SEE PRODUCT</button>
+        </div>
+        <div class="item-2">HEADPHONES</div>
+        <div class="item-2">SPEAKERS</div>
+        <div class="item-2">EARPHONES</div>
+    </section>
+    <div class="flex-container">
+        <div class="column">
+            <h2> BRING YOU THE BEST AUDIO GEAR</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores rerum aut quisquam ullam quasi
+                doloremque eaque, esse aliquid ratione sint deleniti impedit qui officia sed aliquam hic cum sequi
+                debitis?</p>
+        </div>
+        <div class="column-b">
+            <img src="public/model-2.png" alt="Model2">
+        </div>
+    </div>
+    <footer>
+        <div class="inner-footer">
+            <div class="column">
+                <div class="footer-img">
                     <img src="public/audiophilelogo.png" alt="Logo Audiophile">
                 </div>
+                <div class="footer-text">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus sequi suscipit soluta
+                        perspiciatis, aperiam minus consectetur labore similique, non rem cumque excepturi sit fugit
+                        amet, numquam quo fugiat doloremque deleniti?</p>
+                </div>
+            </div>
+            <div class="column">
                 <nav>
                     <ul>
                         <li>HOME</li>
                         <li>HEADPHONES</li>
                         <li>SPEAKERS</li>
                         <li>EARPHONES</li>
-                        <i class="fa fa-fw fa-shopping-cart"></i>
                     </ul>
-
                 </nav>
-            </div>
-        </header>
-        <div class="flex-container">
-            
-        </div>
-        <footer>
-            <div class="inner-footer">
-                <div class="column">                
-                        <div class="footer-img">
-                            <img src="public/audiophilelogo.png" alt="Logo Audiophile">
-                        </div> 
-                        <div class="footer-text">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus sequi suscipit soluta
-                                perspiciatis, aperiam minus consectetur labore similique, non rem cumque excepturi sit fugit
-                                amet, numquam quo fugiat doloremque deleniti?</p>
-                        </div> 
-               </div>
-                <div class="column">
-                        <nav>
-                            <ul>
-                                <li>HOME</li>
-                                <li>HEADPHONES</li>
-                                <li>SPEAKERS</li>
-                                <li>EARPHONES</li>
-                            </ul>       
-                        </nav>
-            
-                        <div class="footer-icons">
-                            <ul>
-                                <li><i class="fa fa-faw fa-twitter"></i></li>
-                                <li><i class="fa fa-faw  fa-facebook-square"></i></li>
-                                <li><i class="fa fa-faw fa-instagram"></i></li>
-                            </ul>
-                        </div>
+
+                <div class="footer-icons">
+                    <ul>
+                        <li><i class="fa fa-faw fa-twitter"></i></li>
+                        <li><i class="fa fa-faw  fa-facebook-square"></i></li>
+                        <li><i class="fa fa-faw fa-instagram"></i></li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </body>
+        </div>
+    </footer>
+</body>
+
 </html>
