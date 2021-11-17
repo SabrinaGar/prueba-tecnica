@@ -11,7 +11,7 @@ Examples:
 
 function filterByValue(arr, key){
   var arrFilter = arr.filter(value => key in value);
-    console.log(arrFilter);
+    console.log("Exercise 1 ", arrFilter);
     return arrFilter;
 }
 filterByValue([{first: 'Elie', last:"Schoppik"}, {first: 'Tim', last:"Garcia", isCatOwner: true}, {first: 'Matt', last:"Lane"}, {first: 'Colt', last:"Steele", isCatOwner: true}], 'isCatOwner')
@@ -31,7 +31,7 @@ function find(arr, searchValue){
             return undefined;
         }
         );
-    console.log(arrFind[0]);
+    console.log("Exercise 2", arrFind[0]);
 		return arrFind;	
 
 
@@ -45,8 +45,12 @@ Examples:
 */
 
 function findInObj(arr, key, searchValue){
-
+    var arrFindObj = arr.filter(value => { 
+        return key in value && value[key] === searchValue;
+        });
+    console.log("Exercise 3",arrFindObj[0]);
 }
+    findInObj([{first: 'Elie', last:"Schoppik"}, {first: 'Tim', last:"Garcia", isCatOwner: true}, {first: 'Matt', last:"Lane"}, {first: 'Colt', last:"Steele", isCatOwner: true}], 'isCatOwner',true) // {first: 'Tim', last:"Garcia", isCatOwner: true}
 
 /*
 Write a function called removeVowels which accepts a string and returns a new string with all of the vowels (both uppercased and lowercased) removed. Every character in the new string should be lowercased.
@@ -57,8 +61,17 @@ Examples:
 */
 
 function removeVowels(str){
- 
+    var arr = str.split('');
+	var vowels = ['a','e','i','u'];
+	var remvArr = arr.filter( value => vowels.indexOf(value.toLowerCase()) === -1)
+    .join('').toLowerCase();
+    console.log("Excercise 4", remvArr);
+    return remvArr;
+	
 }
+    removeVowels('Elie') // ('l')
+    removeVowels('TIM') // ('tm')
+    removeVowels('ZZZZZZ') // ('zzzzzz')
 
 
 
@@ -70,21 +83,18 @@ Examples:
     doubleOddNumbers([4,4,4,4,4]) // []
 */
 
-function doubleOddNumbers(arr){
+ function doubleOddNumbers(arr){
+    var oddNum = arr.filter(num=>num%2)
+    var doubledNum = oddNum.map(num=>num*2)
+    console.log("Excercise 5", doubledNum);
+    return doubledNum;
+  
 
-}
+} 
 
-/*
-Write a function called removeVowels which accepts a string and returns a new string with all of the vowels (both uppercased and lowercased) removed. Every character in the new string should be lowercased.
-Examples:
-    removeVowels('Elie') // ('l')
-    removeVowels('TIM') // ('tm')
-    removeVowels('ZZZZZZ') // ('zzzzzz')
-*/
+    doubleOddNumbers([1,2,3,4,5]) // [2,6,10]
+    doubleOddNumbers([4,4,4,4,4]) // []  
 
-function removeVowels(str){
-    
-}
 
 /*
 Write a function called extractKey which accepts an array of objects and some key and returns a new array with the value of that key in each object.
